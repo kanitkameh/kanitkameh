@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app>
+	<body>
+			<div class="menu">
+				<a href="index.html">Home</a>
+				<a href="biography.html">About me</a>
+				<a href="games.html">Games & Software</a>
+				<a href="register.html">To register/login press here</a>
+			</div>
+		<p>Calculate the square of a number</p>
+		<input type="number" ng-model="name" id="numInput" value="Enter a number"></input>
+		<button type="button" onclick=da();>Calculate!</button>
+		<script>
+			function da(){
+				var n = document.getElementById("numInput").value;
+				document.getElementById("result").innerHTML ="Result: " + (n*n);
+			}
+		</script>
+		</br>
+		<p id="result">Result:{{name*name}}</p>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+	</body>
+</html>
